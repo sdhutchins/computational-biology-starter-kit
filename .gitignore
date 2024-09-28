@@ -1,0 +1,6 @@
+# macOS specific files
+.DS_Store
+
+# General files to ignore
+*.log
+*.tmp
