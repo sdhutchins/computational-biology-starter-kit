@@ -5,6 +5,26 @@ to computational biology, get started with the essential tools, skills, and best
 you're a biologist interested in coding or a computational enthusiast diving into biology, this guide provides
 a structured path to help you begin your journey.
 
+## Recommended (Probably Required) Reading
+
+Start with this selection of articles that provide an overview of computational biology and getting started.
+
+These articles were very helpful in shaping my own path in computational biology,
+and I hope they will be useful to you as well.
+
+1. **[So you want to be a computational biologist?](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2740.html)**
+2. **[Best Practices for Scientific Computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)**
+3. **[Good Enough Practices in Scientific Computing](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)**
+4. **[Ten simple rules for biologists learning to program](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005871)**
+5. **[Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)**
+6. **[A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
+    - This article is a bit old, but the principles are still relevant.
+    - I recommend reading this [MIT article on file structure](https://mitcommlab.mit.edu/be/commkit/file-structure/) and using a
+    directory structure similar to [this](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md#case-study-2-a-simple-hierarchy)
+
+Overall, these articles help you learn some best practices before diving into a project or learning git, Unix,
+Python, or R.
+
 ## What You’ll Learn
 
 - Basics of version control with Git and GitHub
@@ -13,9 +33,28 @@ a structured path to help you begin your journey.
 - Best practices for reproducibility in computational biology
 - Workflow management and automation tips
 
-## Learning Path
+## A Suggested Learning Path
 
-### 1. **Getting Started with Git and GitHub**
+There are multiple paths a person can take to learn computational biology. Here is a suggested path I am providing
+that would have been helpful to me when I was starting out.
+
+In general, you should have a project in mind before jumping into these tutorials. This will help you apply what you
+learn and make the learning process more engaging.
+
+### 1. **Navigating the Unix Command Line**
+
+- **Why Learn This?** The command line is the backbone of many computational biology workflows, allowing you to
+automate tasks, manage files, and run bioinformatics software.
+- **Topics to Cover:**
+    - Basic commands (`ls`, `cd`, `mv`, `cp`, `rm`, `grep`, `find`)
+    - File permissions and environment variables
+    - Writing and executing simple bash scripts
+    - Data manipulation with `awk`, `sed`, and `cut`
+- **Best Practices:**
+    - Always back up your data before running destructive commands.
+    - Use comments in scripts to document your code.
+
+### 2. **Getting Started with Git and GitHub**
 
 - **Why Learn This?** Version control is crucial for managing your code, collaborating with others, and maintaining
 reproducibility in your research.
@@ -29,20 +68,7 @@ reproducibility in your research.
     - Use branches for new features or experiments.
     - Regularly sync with the main branch and keep it stable.
 
-### 2. **Navigating the Unix Command Line**
-
-- **Why Learn This?** The command line is the backbone of many computational biology workflows, allowing you to
-automate tasks, manage files, and run bioinformatics software.
-- **Topics to Cover:**
-    - Basic commands (`ls`, `cd`, `mv`, `cp`, `rm`, `grep`, `find`)
-    - File permissions and environment variables
-    - Writing and executing simple bash scripts
-    - Data manipulation with `awk`, `sed`, and `cut`
-- **Best Practices:**
-    - Always back up your data before running destructive commands.
-    - Use comments in scripts to document your code.
-
-### 3. **Introduction to Python**
+### 3a. **Introduction to Python**
 
 - **Why Learn This?** Python is a versatile language widely used in data analysis, machine learning, and bioinformatics.
 - **Topics to Cover:**
@@ -54,7 +80,7 @@ automate tasks, manage files, and run bioinformatics software.
     - Write clean, readable code with meaningful variable names.
     - Use virtual environments to manage dependencies (`venv`, `conda`).
 
-### 4. **Introduction to R**
+### 3b. **Introduction to R**
 
 - **Why Learn This?** R is especially powerful for statistical analysis and data visualization, often used in genomics
  and other biology-related data analysis.
