@@ -20,7 +20,7 @@ and I hope they will be useful to you as well.
 6. **[A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
     - This article is a bit old, but the principles are still relevant.
     - I recommend reading this [MIT article on file structure](https://mitcommlab.mit.edu/be/commkit/file-structure/) and using a
-    directory structure similar to [this](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md#case-study-2-a-simple-hierarchy)
+    directory structure similar to [this (the 2nd case study)](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md#case-study-2-a-simple-hierarchy).
 
 Overall, these articles help you learn some best practices before diving into a project or learning git, Unix,
 Python, or R. Take your time to read through them before diving into programming because they will help you avoid common
