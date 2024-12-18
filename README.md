@@ -38,7 +38,7 @@ pitfalls and make your life easier in the long run.
 There are multiple paths a person can take to learn computational biology. Here is a suggested path I am providing
 that would have been helpful to me when I was starting out.
 
-:important: This is a suggested path, and if you can take a course at your university or online, that would also
+:warning: This is a suggested path, and if you can take a course at your university or online, that would also
 be beneficial.
 
 ![Learning Path](learning-path.png)
