@@ -23,20 +23,23 @@ and I hope they will be useful to you as well.
     directory structure similar to [this](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md#case-study-2-a-simple-hierarchy)
 
 Overall, these articles help you learn some best practices before diving into a project or learning git, Unix,
-Python, or R.
+Python, or R. Take your time to read through them before diving into programming because they will help you avoid common
+pitfalls and make your life easier in the long run.
 
 ## What You’ll Learn
 
-- Basics of version control with Git and GitHub
 - Navigating the Unix command line
-- Introduction to scripting with Python and R
+- Basics of version control with Git and GitHub
+- Introduction to scripting with Python and/or R
 - Best practices for reproducibility in computational biology
-- Workflow management and automation tips
 
 ## A Suggested Learning Path
 
 There are multiple paths a person can take to learn computational biology. Here is a suggested path I am providing
 that would have been helpful to me when I was starting out.
+
+:important: This is a suggested path, and if you can take a course at your university or online, that would also
+be beneficial.
 
 ![Learning Path](learning-path.png)
 
@@ -102,6 +105,15 @@ notebooks, R Markdown, or similar tools to create reproducible research document
 - **Data Management:** Keep raw data unchanged and well-documented. Use clear naming conventions for files.
 - **Coding Standards:** Follow PEP 8 (Python) or Tidyverse style guide (R) for code readability.
 - **Collaboration:** Use GitHub issues, pull requests, and project boards to manage work and collaborate effectively.
+
+## Common Pitfalls to Avoid
+
+- **Not Documenting Your Work:** Keep detailed notes, comments, and commit messages to understand your work later.
+- **Not Backing Up Data:** Always back up your data before running potentially destructive commands.
+- **Not Using Version Control:** Version control helps you track changes, collaborate with others, and maintain reproducibility.
+- **Not Testing Your Code:** Write tests to ensure your code works as expected and catches errors early.
+- **Not Seeking Help:** Don't be afraid to ask questions or seek help from online forums, colleagues, or mentors.
+- **Not Planning Your Project:** Define your goals, plan your workflow, and break down tasks into manageable steps.
 
 ## Additional Resources
 
