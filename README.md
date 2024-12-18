@@ -38,8 +38,10 @@ Python, or R.
 There are multiple paths a person can take to learn computational biology. Here is a suggested path I am providing
 that would have been helpful to me when I was starting out.
 
-In general, you should have a project in mind before jumping into these tutorials. This will help you apply what you
-learn and make the learning process more engaging.
+![Learning Path](learning-path.png)
+
+In general, you should have a project in mind before jumping into these tutorials. This will provide extra motivation to
+apply what you learn and make the learning process more engaging.
 
 ### 1. **Navigating the Unix Command Line**
 
