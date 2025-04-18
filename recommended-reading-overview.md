@@ -1,52 +1,149 @@
-### Best Practices for Becoming a Computational Biologist
+# Best Practices for Scientific Programming
 
-Becoming a proficient computational biologist involves a combination of learning programming skills and adopting best practices for scientific computing to ensure reliable and reproducible research.
+## Code Readability and Clarity
 
-**Learning to Program:**
+- **Write code for people, not just computers.**
+  - Prioritize human readability and maintainability in your code structure and style (Wilson et al., 2014).
+  - Break programs into small, focused functions to reduce cognitive load.
+  - Use meaningful, distinctive names for variables and functions.
+  - Apply consistent coding style and formatting throughout the project (Wilson et al., 2014).
+  - Let the innovation lie in your scientific logic, not in confusing variable names or tangled code structure (MIT Comm Lab).
+  - Well-written code should self-document its purpose, minimizing the need for excessive comments (MIT Comm Lab).
 
-*   **Start with a clear goal** and choose a programming language that aligns with your objectives and the needs of your field (Carey & Papin, 2018). For example, if your primary goal is to analyze large biological datasets and perform statistical analysis, **R** is a strong choice due to its extensive libraries. If you aim to build more general-purpose bioinformatics tools, **Python**, with libraries like Biopython and scikit-learn, is widely used.
-*   **Break down complex problems into smaller, manageable steps** (Carey & Papin, 2018). Instead of trying to write a whole analysis script at once, focus on individual tasks like reading data, performing a specific calculation, or generating a plot.
-*   **Actively seek help** from programming communities, mentors, and online resources (Carey & Papin, 2018). Many universities have scientific computing groups. Online platforms like Stack Overflow and Biostars are excellent resources for asking questions.
-*   **Learn how to ask effective questions** by clearly stating the problem, including error messages, providing relevant code snippets, and describing the steps you've already taken to troubleshoot (Carey & Papin, 2018).
-*   **Don't reinvent the wheel**; leverage existing code, libraries, and online tutorials (Carey & Papin, 2018; Wilson et al., 2017). For instance, instead of writing your own function for calculating sequence alignment, look for well-established libraries that provide this functionality.
-*   **Practice consistently** using toy datasets that mimic the structure of your real data but are simpler to work with and allow you to predict the expected outcomes (Carey & Papin, 2018).
-*   **Teach yourself with patience** and utilize diverse learning resources such as online courses, workshops (like Software Carpentry and Data Carpentry), and books (Carey & Papin, 2018; Wilson et al., 2017).
-*   **Just start coding** (Carey & Papin, 2018). The most challenging step is often the first one.
+## Automate Repetitive Tasks
 
-**Best Practices in Scientific Computing:**
+- **Let the computer do the work.**
+  - Automate repetitive steps and analyses instead of performing them manually (Wilson et al., 2014).
+  - Script commands or use workflow tools to execute and repeat operations automatically.
+  - Save command histories or use shell scripts, Makefiles, or similar tools to capture operations (Wilson et al., 2014).
+  - Avoid manual data manipulation—it is error-prone and irreproducible (Sandve et al., 2013).
+  - Convert all repeatable or reproducible tasks into scripts or pipelines.
 
-*   **Organize your projects with a logical and consistent file structure** to make it easy to find data, code, and results (Wilson et al., 2017; MIT Communication Lab). A common structure includes separate directories for `data` (raw and processed), `src` (source code), `results` (figures and tables), and `docs` (documentation). The MIT Communication Lab provides an example structure:
-    ```text
-    PROJECT/
-    ├── data/
-    │   ├── raw/
-    │   ├── interim/
-    │   └── processed/
-    ├── docs/
-    ├── models/
-    ├── notebooks/
-    ├── reports/
-    ├── src/
-    │   ├── data/
-    │   ├── features/
-    │   ├── models/
-    │   └── visualization/
-    └── README.md
-    ```
-*   **Adopt consistent and descriptive naming conventions** for files, folders, variables, and functions to avoid ambiguity (Wilson et al., 2014; MIT Communication Lab). For example, use meaningful variable names like `gene_expression_levels` instead of `x`. For dates in filenames, use the `YYYY_MM_DD` format (MIT Communication Lab).
-*   **Use a version control system** like Git to track changes to your code and collaborate effectively (Wilson et al., 2014; Wilson et al., 2017). Platforms like GitHub and GitLab provide remote repositories.
-*   **Write clear and concise comments** in your code to explain its purpose and functionality (Wilson et al., 2017). Focus on documenting the 'what' and 'why' of your code, not just the 'how' (Wilson et al., 2014).
-*   **Automate repetitive tasks** using scripts (e.g., shell scripts, Python scripts) and build tools like Make to ensure consistency and reduce errors (Wilson et al., 2014; Wilson et al., 2017). For example, a script can be used to automatically download data, run a series of analysis steps, and generate a report.
-*   **Test your code** to ensure it produces the expected results (Wilson et al., 2014; Wilson et al., 2017). This can involve comparing the output to known correct values for small test cases. Turn bugs into test cases to prevent their recurrence (Wilson et al., 2014).
-*   **Collaborate with others** by using pre-merge code reviews, pair programming (especially for onboarding new team members or tackling complex problems), and issue tracking tools to manage tasks and bugs (Wilson et al., 2014; Wilson et al., 2017).
-*   **Prioritize reproducibility** by saving raw data, documenting all data processing steps in scripts, making dependencies explicit (e.g., using `requirements.txt` in Python), and sharing your code and data publicly when possible (Wilson et al., 2017; Sandve et al., 2013).
-*   **Document the design and purpose** of your software, focusing on interfaces and reasons rather than just implementation details (Wilson et al., 2014). Embed documentation within the code itself using documentation generators (Wilson et al., 2014).
-*   **Optimize software only after it works correctly** and use profilers to identify performance bottlenecks (Wilson et al., 2014). Write code in the highest-level language possible initially and switch to lower-level languages only if significant performance gains are needed (Wilson et al., 2014).
+## Develop Incrementally and Use Version Control
 
-**Mindset:**
+- **Make incremental changes.**
+  - Work in small, manageable steps with frequent feedback (Wilson et al., 2014).
+  - Catch errors early and identify sources when issues arise.
+  - Break problems into smaller parts to make programming more approachable (Carey & Papin, 2017).
 
-*   Remember that **computational biology is fundamentally biology** using computational tools (Markowetz, 2017 cited in Carey & Papin, 2018). Keep the biological questions at the forefront.
-*   Recognize that **computational proficiency is increasingly essential** for all biologists (Carey & Papin, 2018; Wilson et al., 2014).
-*   Aim for "**good enough**" practices initially, focusing on the most impactful improvements, and gradually adopt more advanced techniques as needed (Wilson et al., 2017).
+- **Use version control for everything.**
+  - Adopt a version control system (e.g., Git) from the start (Wilson et al., 2014; Wilson et al., 2017).
+  - Track changes in code and all manually created files.
+  - Commit often in small chunks with informative messages.
+  - Regularly push changes to remote repositories for backup (Wilson et al., 2017).
+  - Some teams use checklists to ensure changes are saved and shared.
+  - Version control also helps your future self understand and reuse your work later.
 
-By embracing these best practices, aspiring computational biologists can build a strong foundation for conducting rigorous and reproducible research.
+## Avoid Duplication and Embrace Reuse
+
+- **Don’t repeat yourself (DRY).**
+  - Ensure each piece of information or functionality appears in only one place (Wilson et al., 2014).
+  - Refactor common operations into functions or modules.
+  - Avoid code duplication by modularizing logic.
+  - Reuse existing libraries or tools instead of building from scratch (& Papin, 2017).
+  - Search for well-maintained solutions before writing new functionality (Wilson et al., 2017).
+  - Test libraries on small examples to confirm reliability.
+
+## Test and Validate Rigorously
+
+- **Plan for mistakes and test your code.**
+  - Use assertions to confirm that program state is as expected (Wilson et al., 2014).
+  - Turn bugs into test cases to prevent reoccurrence.
+  - Write unit tests using established frameworks (Wilson et al., 2014).
+  - Test critical logic and edge cases.
+  - Use debuggers to inspect complicated code (Wilson et al., 2014).
+  - Record intermediate results in readable, standardized formats (Sandve et al., 2013).
+  - Track what was run and why—like a computational lab notebook (Carey & Papin, 2017).
+
+## Optimize Only After Correctness
+
+- **Get it right before you make it fast.**
+  - Premature optimization increases complexity and hides bugs (Wilson et al., 2014).
+  - First, ensure the code is correct and results are valid.
+  - Optimize only after correctness is verified.
+  - Use profiling tools to identify real performance issues.
+  - Write code in the highest-level language reasonable for the task (Wilson et al., 2014).
+  - Use lower-level languages only if profiling confirms a need.
+
+## Document Code and Workflows
+
+- **Document design and purpose, not just mechanics.**
+  - Focus comments on why code exists, not what it does line-by-line (Wilson et al., 2014).
+  - Top-of-file comments should describe purpose, inputs, outputs, and usage (Wilson et al., 2017).
+  - Document function arguments, return values, and assumptions.
+  - Avoid repeating information that is obvious from clear code.
+  - Refactor complex code instead of adding excessive commentary.
+  - Embed docstrings and inline comments with code (Wilson et al., 2014).
+  - Provide runnable examples or small test data for illustration (Wilson et al., 2017).
+
+- **Maintain project-level documentation.**
+  - Write an overview or README with:
+    - Project goals
+    - Code organization
+    - Reproduction instructions (Wilson et al., 2017)
+  - Aim to help your future self or collaborators get up to speed quickly (MIT Comm Lab).
+
+## Organize Projects and Data Logically
+
+- **Establish a coherent file structure.**
+  - Use a consistent directory layout (Wilson et al., 2017).
+
+```bash
+project/
+├── data/       # raw data and metadata
+├── results/    # processed data or outputs
+├── src/        # source code
+├── doc/        # documentation and manuscripts
+├── bin/        # external executables
+```
+
+- **Best practices:**
+  - Do not modify raw data—store processed copies separately.
+  - Use relative paths in code, not absolute ones (MIT Comm Lab).
+  - Name files descriptively with meaningful terms or timestamps (Wilson et al., 2017).
+  - Avoid ambiguous labels like `final_version2.csv`.
+  - File structures communicate project logic and organization (MIT Comm Lab).
+
+## Collaborate and Share Effectively
+
+- **Use code reviews and issue trackers.**
+  - Conduct peer reviews before merging changes (Wilson et al., 2014).
+  - Try pair programming to solve difficult problems.
+  - Track bugs and tasks using an issue tracker (Wilson et al., 2014; Wilson et al., 2017).
+
+- **Make projects accessible and citable.**
+  - Agree on coding and communication standards (Wilson et al., 2017).
+  - Include a license early in the project.
+  - Archive in public repositories with DOIs for citation (Wilson et al., 2017).
+  - Share early and frequently—don’t wait for perfection.
+  - Ask for help on forums like Stack Overflow or BioStars (Carey & Papin, 2017).
+  - Scientific programming is collaborative and benefits from openness.
+
+## Ensure Reproducibility of Results
+
+- **Track every step of your analysis.**
+  - Record exactly how each result or figure was produced (Sandve et al., 2013).
+  - Make workflows executable—don’t rely on prose descriptions alone.
+
+- **Avoid manual manipulation.**
+  - Replace hand-edits with scripts (Sandve et al., 2013).
+  - If manual edits are needed, document them and save all intermediates.
+
+- **Archive software environments.**
+  - Record tool versions and library dependencies.
+  - Use containers, virtual environments, or export environment lists (Sandve et al., 2013).
+
+- **Record provenance.**
+  - Link results to specific scripts and commit hashes (Sandve et al., 2013).
+
+- **Account for randomness.**
+  - Set and save random seeds in stochastic analyses (Sandve et al., 2013).
+
+- **Save data at all stages.**
+  - Preserve raw, cleaned, and intermediate data files (Wilson et al., 2017).
+  - Store the data behind each figure (Sandve et al., 2013).
+
+- **Share openly.**
+  - Publish code, data, and documentation (Sandve et al., 2013; Wilson et al., 2017).
+  - Use public archives for long-term access.
+  - Transparency improves your work and benefits the community.
