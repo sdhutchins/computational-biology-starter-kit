@@ -7,7 +7,7 @@ Application Programming Interface; allows programs to communicate and use each o
 A step-by-step procedure for solving a problem or performing a task.
 
 ### Argument
-A value passed to a [function](https://github.com/sdhutchins/computational-biology-starter-kit/new/main#function) when it is called.
+A value passed to a [function](https://github.com/sdhutchins/computational-biology-starter-kit/blob/main/glossary.md#function) when it is called.
 
 ### Assertion
 A statement in code used to check that a condition is true at a specific point. If false, it halts execution.
