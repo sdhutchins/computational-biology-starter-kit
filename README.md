@@ -75,6 +75,9 @@ reproducibility in your research.
     - Commit often with descriptive messages.
     - Use branches for new features or experiments.
     - Regularly sync with the main branch and keep it stable.
+- **Tutorials:**
+    - [Software Carpentry's "Version Control with Git"](https://swcarpentry.github.io/git-novice/)
+    - [freeCodeCamp's Tutorial](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
 
 ### 3a. **Introduction to Python**
 
