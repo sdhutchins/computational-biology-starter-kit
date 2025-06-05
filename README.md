@@ -58,6 +58,9 @@ automate tasks, manage files, and run bioinformatics software.
 - **Best Practices:**
     - Always back up your data before running destructive commands.
     - Use comments in scripts to document your code.
+- **Tutorials:**
+    - [Software Carpentry's "The Unix Shell"](https://swcarpentry.github.io/shell-novice/)
+    - [Linux Journey](https://linuxjourney.com/)
 
 ### 2. **Getting Started with Git and GitHub**
 
